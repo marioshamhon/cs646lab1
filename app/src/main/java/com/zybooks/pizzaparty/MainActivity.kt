@@ -19,16 +19,16 @@ const val SLICES_PER_PIZZA = 8
 
 class MainActivity : AppCompatActivity() {
 
-    private lateinit var numAttendEditText: EditText
-    private lateinit var numPizzasTextView: TextView
-    private lateinit var howHungryRadioGroup: RadioGroup
+    private lateinit var numAttendEditText: EditText //Creating a reference to the edit text UI element
+    private lateinit var numPizzasTextView: TextView //Creating a reference to the "total pizzas" text UI element
+    private lateinit var howHungryRadioGroup: RadioGroup //Creating a reference to the Radio group UI element
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        numAttendEditText = findViewById(R.id.num_attend_edit_text)
-        numPizzasTextView = findViewById(R.id.num_pizzas_text_view)
-        howHungryRadioGroup = findViewById(R.id.hungry_radio_group)
+        numAttendEditText = findViewById(R.id.num_attend_edit_text) //Finding the edit text UI element using its ID
+        numPizzasTextView = findViewById(R.id.num_pizzas_text_view) //Finding the "total pizzas" text UI element using its ID
+        howHungryRadioGroup = findViewById(R.id.hungry_radio_group) //Finding the radio group UI element using its ID
     }
 
     /**
